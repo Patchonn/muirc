@@ -80,8 +80,6 @@ class Connection(object):
         self.s_in = self.s.makefile("r")
         self.s_out = self.s.makefile("w")
         self.write_lock = threading.Lock()
-        
-        return self
     
     def _send(self, m):
         self.s_out.write(translate(m))

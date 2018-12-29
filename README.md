@@ -3,6 +3,8 @@ The ``muirc`` module
 
 ``muirc`` is a minimalist & efficient Python module to parse & create IRC messages. It does the job, and only the job, in a Pythonic way.
 
+This fork provides compatibility with python3 and initializes the connection with ``__init__`` instead of ``__new__`` so it can be more easily extended.
+
 Parse & create IRC messages
 ---------------------------
 

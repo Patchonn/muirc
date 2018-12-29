@@ -19,7 +19,7 @@ __all__ = ["translate", "Connection"]
 IRC_RE = re.compile(r"(:(?P<nick>[^ !@]+)(\!(?P<user>[^ @]+))?(\@(?P<host>[^ ]+))? )?(?P<command>[^ ]+) (?P<params1>([^:]*))(?P<params2>(:.*)?)")
 
 def translate(m):
-    if isinstance(m, basestring):
+    if isinstance(m, str):
         # str -> msg
         m = IRC_RE.match(m.strip())
 

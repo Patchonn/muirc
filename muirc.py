@@ -62,7 +62,7 @@ def translate(m):
         return "".join(gen())
 
 class Connection(object):
-    def __init__(cls, o, use_ssl = None):
+    def __init__(self, o, use_ssl = None):
         use_ssl = use_ssl if use_ssl is not None else False
         
         if isinstance(o, (tuple, list, )) and len(o) == 2:
